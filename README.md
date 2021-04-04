@@ -62,7 +62,7 @@ Output:
 
 Task: Generate a `100-dimensional` random H-polytope compute the largest inscribed ball (Chebychev ball) and let the center be the `x0`. Compute the integral of `f(x) = exp^{-a||x-x0||^2}` over the polytope for various values of `a`, `20` times each with both uniform and Gaussian sampling and take the average. Report the standard deviation for each experiment.
 
-* Created HPolytope using ```gen_rand_hpoly()``` and computed centre of the largest inscribed ball(Chebychev ball) along with radius using ```inner_ball()```.
+* Created HPolytope using ```gen_rand_hpoly()``` and computed centre ```x0``` of the largest inscribed ball(Chebychev ball) along with radius using ```inner_ball()```.
 * Computed the integral `f(x) = exp^{-a||x-x0||^2}` over the polytope for various values of `a`, `20` times using both uniform and Gaussian sampling and took the average and calculated standard deviation using standard R functions ```mean()``` and ```sd()```
 
 Code: 
