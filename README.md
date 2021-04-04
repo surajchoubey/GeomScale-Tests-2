@@ -4,9 +4,9 @@
 
 Task: Easy: compile and run ```volesti```. Read the CRAN package documentation, generate a random H-polytope and compute its volume.
 
-* Compiled and run volesti in C++ interface using ```cmake```
+* Compiled and ran volesti tests in C++ interface using ```cmake```, ```make ``` and ```ctest```.
 
-* Created a random H-polytope using ```gen_rand_hpoly()``` and computed its volume using ```volume()```
+* Created a random H-polytope using ```gen_rand_hpoly()``` and computed its volume using ```volume()```.
 
 ```ruby
 library(volesti)
