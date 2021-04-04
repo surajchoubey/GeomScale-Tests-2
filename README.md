@@ -8,7 +8,7 @@ Task: Easy: compile and run ```volesti```. Read the CRAN package documentation, 
 
 * Created a random H-polytope using ```gen_rand_hpoly()``` and computed its volume using ```volume()```
 
-```
+```ruby
 library(volesti)
 P = gen_rand_hpoly(10, 50, generator = list(constants = "sphere"))
 volm = volume(P)
