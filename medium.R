@@ -1,7 +1,7 @@
 library(cubature)
 
 myfunction <- function(x,a=runif(1)) {
-  exp(-a * sum(x^2))
+  y<-exp(-a * sum(x^2))
   return(y)
 }
 
