@@ -1,5 +1,5 @@
 # MONTE CARLO INTEGRATION TESTS
-## (README.MD UNDER MAINTENANCE)
+
 ## 1. Easy
 
 Task: Easy: compile and run ```volesti```. Read the CRAN package documentation, generate a random H-polytope and compute its volume.
@@ -12,13 +12,12 @@ Code:
 ```ruby
 library(volesti)
 P = gen_rand_hpoly(10, 50, generator = list(constants = "sphere"))
-volm = volume(P)
-print(volm)
+print(paste("Required volume of H-Polytope = ", volume(P)))
 ```
 Output: 
 
 ```
-// Output goes here
+[1] "Required volume of H-Polytope =  6337094452454.34"
 ```
 
 ## 2. Medium
@@ -31,7 +30,22 @@ Task: Use the R package cubature to compute the integral of ```f(x) = exp^{-a||x
 Code:
 
 ```ruby
-// Code goes here
+library(cubature)
+
+myfunction <- function(x,a=runif(1)) {
+  exp(-a * sum(x^2))
+  return(y)
+}
+
+t<-1
+
+while(TRUE){
+  tryCatch({
+    integral_value <- hcubature(myfunction, rep(-1,t), rep(1,t), tol=1e-4)
+  })
+  print(paste("Integral value over [-1,1]^",t, " = ", integral_value$integral[1]))
+  t<-t+1
+}
 ```
 Output: 
 
