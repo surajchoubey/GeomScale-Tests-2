@@ -43,7 +43,7 @@ Output:
 
 Task: Use ```volesti``` to approximate the same integrals as in previous test by simple Monte Carlo based on uniform sampling and by Importance Sampling using multivariate spherical Gaussian. Comment on the accuracy and run-time.
 
-* Used library ```volesti``` to compute integral ```f(x) = exp^{-a||x||^2}``` till 100th dimension using uniform and gaussian sampling.
+* Used library ```volesti``` to compute integral ```f(x) = exp^{-a||x||^2}``` till 50th dimension using uniform and gaussian sampling.
 * Comparing the time taken by ```cubature``` v/s ```volesti``` to calculate till 23rd dimension was ```s``` and ```s``` respectively (ran custom tests till 23rd dimension).
 * ```volesti``` was undoubtedly fast and better at accuracy and time taken.
  
