@@ -50,7 +50,48 @@ while(TRUE){
 Output: 
 
 ```
-// Output goes here
+[1] "Integral value over [-1,1]^ 1  =  1.80052767853574"
+[1] "Integral value over [-1,1]^ 2  =  3.60105535707148"
+[1] "Integral value over [-1,1]^ 3  =  7.20211071414296"
+[1] "Integral value over [-1,1]^ 4  =  14.4042214282859"
+[1] "Integral value over [-1,1]^ 5  =  28.8084428565718"
+[1] "Integral value over [-1,1]^ 6  =  57.6168857131437"
+[1] "Integral value over [-1,1]^ 7  =  115.233771426287"
+[1] "Integral value over [-1,1]^ 8  =  230.467542852574"
+[1] "Integral value over [-1,1]^ 9  =  460.935085705149"
+[1] "Integral value over [-1,1]^ 10  =  921.87017141029"
+[1] "Integral value over [-1,1]^ 11  =  1843.74034282057"
+[1] "Integral value over [-1,1]^ 12  =  3687.48068564127"
+[1] "Integral value over [-1,1]^ 13  =  7374.96137128217"
+[1] "Integral value over [-1,1]^ 14  =  14749.9227425663"
+[1] "Integral value over [-1,1]^ 15  =  29499.8454851261"
+[1] "Integral value over [-1,1]^ 16  =  58999.6909702809"
+[1] "Integral value over [-1,1]^ 17  =  117999.381940601"
+[1] "Integral value over [-1,1]^ 18  =  235998.763880645"
+[1] "Integral value over [-1,1]^ 19  =  471997.52776294"
+[1] "Integral value over [-1,1]^ 20  =  943995.055528105"
+[1] "Integral value over [-1,1]^ 21  =  1887990.11102058"
+[1] "Integral value over [-1,1]^ 22  =  3775980.22214735"
+[1] "Integral value over [-1,1]^ 23  =  7551960.44443846"
+[1] "Integral value over [-1,1]^ 24  =  15103920.8865996"
+[1] "Integral value over [-1,1]^ 25  =  0"
+[1] "Integral value over [-1,1]^ 26  =  0"
+[1] "Integral value over [-1,1]^ 27  =  0"
+[1] "Integral value over [-1,1]^ 28  =  0"
+[1] "Integral value over [-1,1]^ 29  =  0"
+[1] "Integral value over [-1,1]^ 30  =  0"
+
+ *** caught segfault ***
+address 0x7fcc180fd000, cause 'invalid permissions'
+
+Traceback:
+ 1: hcubature(myfunction, rep(-1, t), rep(1, t), tol = 1e-04)
+ 2: tryCatchList(expr, classes, parentenv, handlers)
+ 3: tryCatch({    integral_value <- hcubature(myfunction, rep(-1, t), rep(1,         t), tol = 1e-04)})
+ 4: eval(ei, envir)
+ 5: eval(ei, envir)
+ 6: withVisible(eval(ei, envir))
+ 7: source("./medium.R")
 ```
 
 ## 3. Hard
